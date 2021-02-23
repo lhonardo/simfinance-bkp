@@ -225,12 +225,10 @@ class World extends React.Component {
                             'Jan 01|Fev 01|Mar 01|Abr 01|Mai 01|Jun 01|Jul 01|Ago 01|Set 01|Out 01|Nov 01|Dec 01|Jan 02|Fev 02|Mar 02|Abr 02|Mai 02|Jun 02|Jul 02|Ago 02|Set 02|Out 02|Nov 02|Dec 02|',
                     },
                 ],
-                dataset: Object.keys(world.simulationResults).map((key) => {
-                    return {
-                        seriesname: DEFINITIONS.world[key].name,
-                        data: world.simulationResults[key].join('|'),
-                    };
-                }),
+                dataset: {
+                    seriesname: '',
+                    data: '',
+                },
             },
         };
 
